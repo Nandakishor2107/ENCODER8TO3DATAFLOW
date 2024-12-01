@@ -36,18 +36,42 @@ Figure 02  Encoder 8 * 3
 
 **Procedure**
 
-/* write all the steps invloved */
+Step1: Define the specifications and initialize the design.
+Step2: Declare the name of the entity and architecture by using VHDL source code.
+Step3: Write the source code in VERILOG.
+Step4: Check the syntax and debug the errors if found, obtain the synthesis report.
+Step5: Verify the output by simulating the source code.
+Step6: Write all possible combinations of input using the test bench.
+Step7: Obtain the place and route report.
 
 **PROGRAM**
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:
+module encod_data(d, x, y, z);
+ input [7:0] d;
+ output x;
+ output y;
+ output z;
+assign#3 x=d[4]|d[5]|d[6]|d[7];
+assign#3 y=d[2]|d[3]|d[6]|d[7];
+assign#3 z=d[1]|d[3]|d[5]|d[7];
+endmodule
+
+Developed by: NANDA KISHOR S P
+RegisterNumber: 24011485
+
 */
 
 **RTL LOGIC FOR Encoder 8 To 3 in Dataflow Modelling**
 
+![Screenshot (57)](https://github.com/user-attachments/assets/d8ddbb13-4c54-409c-889e-7f7839340498)
+
+
 **TIMING DIGRAMS FOR Encoder 8 To 3 in Dataflow Modelling**
+
+![Screenshot (58)](https://github.com/user-attachments/assets/e39ae0a4-8142-47e1-ac03-629197f7729c)
+
 
 **RESULTS**
 
