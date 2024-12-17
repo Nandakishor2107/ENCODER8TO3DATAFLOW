@@ -76,6 +76,7 @@ RegisterNumber: 24011485
 
 
 **RESULTS**
+
 The 8-to-3 encoder was implemented using dataflow modeling in Verilog, and its functionality was successfully validated through simulation. The outputs matched the expected results from the functional table.
 
 
