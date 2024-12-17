@@ -48,6 +48,7 @@ Step7: Obtain the place and route report.
 
 /* Program for Encoder 8 To 3 in Dataflow Modelling and verify its truth table in quartus using Verilog programming. 
 
+```
 module encod_data(d, x, y, z);
  input [7:0] d;
  output x;
@@ -57,6 +58,7 @@ assign#3 x=d[4]|d[5]|d[6]|d[7];
 assign#3 y=d[2]|d[3]|d[6]|d[7];
 assign#3 z=d[1]|d[3]|d[5]|d[7];
 endmodule
+```
 
 Developed by: NANDA KISHOR S P
 RegisterNumber: 24011485
